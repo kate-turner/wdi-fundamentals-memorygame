@@ -7,7 +7,9 @@ console.log("You found a match!");
 console.log("Sorry, try again.");
 }
 }
-var flipCard = function(cardId) {
+var flipCard = function {
+	this.getAttribute('data-id', "cardId");
+	this.setAttribute('src', (cards[cardId].cardImage));
   {console.log("User flipped " + cards[cardId]);}
   cardsInPlay.push("cardId");
 if (cardsInPlay.length === 2);
@@ -17,7 +19,21 @@ else if (cardsInPlay[0] === cardsInPlay[1])
 		window.alert("Sorry, try again");
 	checkForMatch;
 	}
+var createBoard = function() {
+for (i = 0; i <createBoard.length; i++)
+{
+	var cardElement = document.createElement('img');
+	cardElement.innerHTML = ('img src="images/back.png" alt="Queen of Hearts"');
+	document.getElementById('img').appendChild("game-board");
+	cardElement.setAttribute('src', "images/back.png");
+	cardElement.setAttribute('data-id', i);
+}
+};
 
-flipCard(0);
- flipCard(2);
+	createBoard(function);
+
+	
+	
+
+
  
